@@ -1,0 +1,9 @@
+nltk
+requests
+sklearn
+h5py
+tensorflow
+tensorflow-hub
+git+https://github.com/allenai/bilm-tf.git
+tqdm
+jupyter
