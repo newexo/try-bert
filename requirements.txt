@@ -2,8 +2,10 @@ nltk
 requests
 sklearn
 h5py
-tensorflow
+pydot
+tensorflow==2.3
 tensorflow-hub
-git+https://github.com/allenai/bilm-tf.git
+tensorflow-text
+tf-models-official
 tqdm
 jupyter
