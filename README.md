@@ -1,4 +1,4 @@
-### Try BERT
+# Try BERT
 
 This project contains requirements and some instructions that go along with a demo we gave for running TensorFlow on EC2 GPU instance. Time is a river flowing swiftly so if these files have not been updated in more than a year, do not expect that any of this will still work.
 
@@ -18,6 +18,8 @@ Check python version.
 
     python -V
     ll $(which python)
+
+### Set up virtual environment
 
 Install virtualenvwrapper.
 
@@ -42,3 +44,10 @@ Set up a virtual environment.
 From here on, the environment will be available after logging in again.
 
     workon try-bert
+    
+### Set up drivers for TensorFlow text examples
+ 
+TensorFlow is compiled against a small range of Cuda library versions. To make RNN examples work we need to make cuda 10.1 the default.
+ 
+    sudo rm /usr/local/cuda
+    sudo ln -s /usr/local/cuda-10.1 /usr/local/cuda
