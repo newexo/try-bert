@@ -51,3 +51,9 @@ TensorFlow is compiled against a small range of Cuda library versions. To make R
  
     sudo rm /usr/local/cuda
     sudo ln -s /usr/local/cuda-10.1 /usr/local/cuda
+
+### Dependencies for OpenAI gym
+
+Displaying the results of the cart and pole demo require apt installing two things. All other parts of the training work without these.
+
+    sudo apt install xvfb python-opengl
