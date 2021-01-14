@@ -30,7 +30,9 @@ Append the following two lines to `.bashrc`
     export WORKON_HOME=$HOME/.virtualenvs
     source $HOME/anaconda3/bin/virtualenvwrapper.sh
 
-Logout and log back in so that virtualenvwrapper commands will be available.
+Logout and log back in so that virtualenvwrapper commands will be available. Or
+
+    source ~/.bashrc
 
 Set up a virtual environment.
 
@@ -39,7 +41,7 @@ Set up a virtual environment.
     cd repos
     git clone https://github.com/newexo/try-bert.git
     cd try-bert
-    pip install -r reqirements.txt
+    pip install -r requirements.txt
 
 From here on, the environment will be available after logging in again.
 
